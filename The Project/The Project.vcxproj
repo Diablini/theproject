@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A6836DC5-2336-496E-9FBE-9CE4ED6A1A5A}</ProjectGuid>
+    <ProjectGuid>{28E50D6B-B5CA-45D8-B38A-700D0A3B630F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>TheProject</RootNamespace>
   </PropertyGroup>
@@ -84,8 +84,10 @@
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterBody.h" />
     <ClInclude Include="CharacterHistory.h" />
+    <ClInclude Include="StatTable.h" />
     <ClInclude Include="Liquids.h" />
     <ClInclude Include="RawReader.h" />
+    <ClInclude Include="Stack.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Integer.h" />
@@ -95,6 +97,7 @@
     <ClCompile Include="Bitmask.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="Liquids.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="The Project.cpp" />
   </ItemGroup>

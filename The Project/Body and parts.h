@@ -2,9 +2,13 @@
 #pragma once
 
 #include <string>
+#include <list>
 #include <fstream>
 #include <vector>
 #include "Wound.h"
+
+using std::vector;
+using std::list;
 
 enum TissueType : char
 {
@@ -53,9 +57,9 @@ struct BodyConnection
 {
 	// tissues of the superior limb which connect to
 	// the lesser and can be damaged when connection is severed
-	std::vector<Tissue *> superiorConnected;
+	std::list<Tissue *> superiorConnected;
 	// tissue of lesser limb that connect to superior
-	std::vector<Tissue *> lesserConnected;
+	std::list<Tissue *> lesserConnected;
 	// connecting joint if available
 	Tissue * joint;
 };
@@ -88,16 +92,16 @@ struct BodyPart
 	std::vector<Tissue> tissues;
 	
 	/*We have two types of connected body parts
-	If this body part is severed the first type
+	Superior - If this body part is severed the first type
 	will also be severed from the body - that is
 	it's dependant on this body part for support
 
-	The second type of part is independent from this one
+	The second type of part - lesser, is independent from this one
 	which means that if this part is severed the rest
 	will remain part of the actual body*/
 
-	std::vector<BodyConnection *> super;
-	std::vector<BodyConnection *> lesser;
+	std::list<BodyConnection *> super;
+	std::list<BodyConnection *> lesser;
 };
 
 class Body

@@ -5,6 +5,6 @@
 
 class CharacterHistory
 {
-
+	// TODO: write this class
 
 };

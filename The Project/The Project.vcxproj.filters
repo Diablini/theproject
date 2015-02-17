@@ -63,6 +63,12 @@
     <ClInclude Include="Biitmask.h">
       <Filter>Technical</Filter>
     </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
+    <ClInclude Include="StatTable.h">
+      <Filter>Character</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -78,6 +84,9 @@
       <Filter>Technical</Filter>
     </ClCompile>
     <ClCompile Include="Bitmask.cpp">
+      <Filter>Technical</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
       <Filter>Technical</Filter>
     </ClCompile>
   </ItemGroup>
