@@ -1,0 +1,12 @@
+﻿Build started 17-Feb-15 12:02:34 PM.
+     1>Project "C:\Users\a.branev.PROGRESSBG\documents\visual studio 2012\Projects\The Project\The Project\The Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Integer.cpp
+         Integer.cpp
+     1>c:\users\a.branev.progressbg\documents\visual studio 2012\projects\the project\the project\integer.cpp(10): warning C4715: 'highestOneBit' : not all control paths return a value
+     1>c:\users\a.branev.progressbg\documents\visual studio 2012\projects\the project\the project\integer.cpp(15): error C4716: 'addition_safe' : must return a value
+     1>Done Building Project "C:\Users\a.branev.PROGRESSBG\documents\visual studio 2012\Projects\The Project\The Project\The Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.10

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{573f560d-e25a-4615-b065-ed249a85da3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Biology">
+      <UniqueIdentifier>{fa7457fa-8a1d-4b1a-9d46-3a2dd9b674bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Raws and Files">
+      <UniqueIdentifier>{f06a5f7f-82bc-4f61-a8bc-e36c9a86018c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Technical">
+      <UniqueIdentifier>{71f5da57-dd2d-4efb-939b-319477fe0b7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterHistory.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterBody.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Wound.h">
+      <Filter>Biology</Filter>
+    </ClInclude>
+    <ClInclude Include="Body and parts.h">
+      <Filter>Biology</Filter>
+    </ClInclude>
+    <ClInclude Include="RawReader.h">
+      <Filter>Raws and Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Liquids.h">
+      <Filter>Biology</Filter>
+    </ClInclude>
+    <ClInclude Include="Integer.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
+    <ClInclude Include="Biitmask.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="The Project.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Liquids.cpp">
+      <Filter>Biology</Filter>
+    </ClCompile>
+    <ClCompile Include="Integer.cpp">
+      <Filter>Technical</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitmask.cpp">
+      <Filter>Technical</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
