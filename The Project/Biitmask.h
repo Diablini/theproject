@@ -6,7 +6,7 @@ namespace bit
 {
 // define first four and second four bitmasks
 #define FIRST_HALF 31;
-#define SECOND_HALF   
+#define SECOND_HALF 240;
 
 #define DEFAULT_VALUE 0;
 
@@ -34,9 +34,10 @@ namespace bit
 		bool operator[](uint8_t pos);
 		// get bit at pos
 		bool operator[](bit_pos pos);
-		// set bit at position to value
-		Bitfield& set(uint8_t pos, bool val);
-
+		// set bit at position to true
+		Bitfield& setTrue(bit_pos pos);
+		// set bit at position to false
+		Bitfield& setFalse(bit_pos pos);
 	private:
 		void operator++() {};
 		void operator++(int) {};
