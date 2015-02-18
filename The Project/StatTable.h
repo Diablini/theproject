@@ -24,6 +24,8 @@ struct StatTable
 {
 public:
 
+
 private:
 	uint8_t data[STAT_COUNT];
 };
+

@@ -84,6 +84,8 @@
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterBody.h" />
     <ClInclude Include="CharacterHistory.h" />
+    <ClInclude Include="exception.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="StatTable.h" />
     <ClInclude Include="Liquids.h" />
     <ClInclude Include="RawReader.h" />
@@ -91,13 +93,15 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Integer.h" />
+    <ClInclude Include="Tree.h" />
     <ClInclude Include="Wound.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bitmask.cpp" />
+    <ClCompile Include="exception.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="Liquids.cpp" />
-    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="RawReader.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="The Project.cpp" />
   </ItemGroup>

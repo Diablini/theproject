@@ -69,6 +69,15 @@
     <ClInclude Include="StatTable.h">
       <Filter>Character</Filter>
     </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -86,8 +95,11 @@
     <ClCompile Include="Bitmask.cpp">
       <Filter>Technical</Filter>
     </ClCompile>
-    <ClCompile Include="Stack.cpp">
+    <ClCompile Include="exception.cpp">
       <Filter>Technical</Filter>
+    </ClCompile>
+    <ClCompile Include="RawReader.cpp">
+      <Filter>Raws and Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
