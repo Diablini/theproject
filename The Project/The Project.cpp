@@ -5,6 +5,7 @@
 #include "List.h"
 #include <iostream>
 #include "Stack.h"
+#include "Binary Tree.h"
 
 using std::cout;
 using std::cin;
@@ -15,11 +16,16 @@ int _tmain(int argc, _TCHAR* argv[])
 	List<double> lol;
 	lol.add(1);
 	List<double> ha(lol);
-	for (auto i = ha.iterator(); !i.end(); ++i)
-	{
-		cout << *i << endl;
-	}
-
+	BinarySearchTree<int> mytree;
+	mytree.add(5);
+	mytree.add(6);
+	mytree.add(4);
+	mytree.add(3);
+	mytree.add(7);
+	mytree.add(9);
+	mytree.add(8);
+	mytree.remove(6);
+	bool test = mytree.find(6);
 	return 0;
 }
 

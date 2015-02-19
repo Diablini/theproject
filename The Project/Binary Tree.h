@@ -20,12 +20,18 @@ struct BinaryNode
 template<typename T>
 class BinarySearchTree
 {
+public:
+
+	BinarySearchTree()
+	{
+		root = NULL;
+	}
 
 	bool add(T elem)
 	{
 		if (root == NULL)
 		{
-			root = new BinaryNode(elem);
+			root = new BinaryNode<T>(elem);
 			return true;
 		}
 		BinaryNode<T> * current = root;
@@ -36,7 +42,7 @@ class BinarySearchTree
 				// navigate right
 				if (current->right == NULL)
 				{
-					current->right = new BinaryNode(elem);
+					current->right = new BinaryNode<T>(elem);
 					current->right->parent = current;
 					return true;
 				}
@@ -48,7 +54,7 @@ class BinarySearchTree
 				// navigate left
 				if (current->left == NULL)
 				{
-					current->left = new BinaryNode(elem);
+					current->left = new BinaryNode<T>(elem);
 					current->left->parent = current;
 					return true;
 				}
@@ -97,13 +103,36 @@ class BinarySearchTree
 				// no children
 				if (current->left == NULL && current->right == NULL)
 				{
-					delete current->parent;
+					current->parent->left == current ?
+						current->parent->left = NULL : current->parent->right = NULL;
+					delete current;
 					return true;
 				}
 				// two children
 				if (current->left != NULL && current->right != NULL)
 				{
-					// TODO: handle two children deletion;
+					// DONE: handle two children deletion
+					// find minimum in right subtree
+					BinaryNode<T> * minimum = current->right;
+					// if the minimum element is on the right
+					// retain its right subtree
+					if (minimum->left == NULL)
+					{
+						current->key = minimum->key;
+						current->right = minimum->right;
+						current->right->parent = current;
+						delete minimum;
+						return true;
+					}
+					while(minimum->left != NULL)
+					{
+						minimum = minimum->left;
+					}
+					current->key = minimum->key;
+					// stop parent from pointing to deleted node
+					BinaryNode<T> * parent = minimum->parent;
+					parent->left = NULL;
+					delete minimum;
 					return true;
 				}
 				// one child
@@ -111,8 +140,12 @@ class BinarySearchTree
 				// choose replacement child
 				current->left == NULL ? replacement = current->right : replacement = current->left;
 				current->key = replacement->key;
+				current->left = replacement->left;
+				current->right = replacement->right;
+				if (current->left != NULL) current->left->parent = current;
+				if (current->right != NULL) current->right->parent = current;
 				delete replacement;
-				current->left = current->right = NULL;
+				return true;
 			}
 			if (current->key < elem)
 			{
@@ -133,5 +166,5 @@ class BinarySearchTree
 
 
 private:
-	BinaryNode root;
+	BinaryNode<T> * root;
 };
