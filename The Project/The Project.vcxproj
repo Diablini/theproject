@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Biitmask.h" />
+    <ClInclude Include="Binary Tree.h" />
     <ClInclude Include="Body and parts.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterBody.h" />
@@ -94,6 +95,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Integer.h" />
     <ClInclude Include="Tree.h" />
+    <ClInclude Include="Vector.h" />
     <ClInclude Include="Wound.h" />
   </ItemGroup>
   <ItemGroup>

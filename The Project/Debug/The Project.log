@@ -1,4 +1,4 @@
-﻿Build started 18-Feb-15 5:04:23 PM.
+﻿Build started 19-Feb-15 3:21:32 PM.
      1>Project "C:\Users\a.branev.PROGRESSBG\documents\visual studio 2012\Projects\The Project\The Project\The Project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "The Project.cpp"
@@ -16,4 +16,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.17
+Time Elapsed 00:00:02.72

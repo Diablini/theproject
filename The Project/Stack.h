@@ -3,9 +3,10 @@
 #pragma once
 
 #include <exception>
+#include "exception.h" 
 
 #define STACK_INITIAL_SIZE 32
-#define STACK_MAX_SIZE 10000
+#define STACK_MAX_SIZE 50000
 
 template<typename T>
 class Stack
@@ -50,7 +51,9 @@ Stack<T>::Stack()
 template<typename T>
 Stack<T>::Stack(size_t INITIAL_SIZE)
 {
-	if (INITIAL_SIZE > STACK_MAX_SIZE) throw std::bad_alloc; 
+	if (INITIAL_SIZE > STACK_MAX_SIZE)
+		throw Base_Exception("Attempt to init a huge stack with a size of "
+		+ itoa(INITIAL_SIZE * sizeof(T)) + " bytes", this);
 	stack_pointer = 0;
 	capacity = INITIAL_SIZE;
 	data = new T [INITIAL_SIZE];
@@ -87,7 +90,7 @@ inline void Stack<T>::push(T obj)
 template<typename T>
 T& Stack<T>::top()
 {
-	if (stack_pointer == 0) throw std::exception("Top() on empty stack at");
+	if (stack_pointer == 0) throw Base_Exception("Top() on empty stack", this);
 	return data[stack_pointer - 1];
 }
 
@@ -96,7 +99,7 @@ inline T Stack<T>::pop()
 {
 	if (stack_pointer == 0)
 	{
-		throw std::exception("Pop() on empty stack");
+		throw Base_Exception("Pop() on empty stack", this);
 	}
 	--stack_pointer;
 	return data[stack_pointer];
@@ -123,7 +126,7 @@ void Stack<T>::resizeUp()
 {
 	if (STACK_MAX_SIZE < capacity * 2)
 	{
-		
+		throw Base_Exception("Attempt to resize stack bigger that max stack size", this);
 	}
 	T * temp = new T [capacity *= 2];
 	memcpy(temp, data, sizeof(T) * stack_pointer);

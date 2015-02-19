@@ -12,6 +12,7 @@ struct ListNode
 	ListNode * next;
 };
 
+// forward list iterator
 template<typename T>
 class list_iterator
 {
@@ -42,6 +43,7 @@ class List
 public:
 	List();
 	~List();
+	List(List& c);
 
 	void add(T element);
 	void remove(size_t position);
@@ -54,6 +56,28 @@ private:
 };
 
 // CODE STARTS HERE
+
+template<typename T>
+List<T>::List(List& c)
+{
+	if (c.first == NULL)
+	{
+		first = NULL;
+		return;
+	}
+	first = new ListNode<T>;
+	first->data = c.first->data;
+	if (c.first->next == NULL) return;
+	ListNode<T> * current = first;
+	ListNode<T> * target = c.first;
+	while(target->next != NULL)
+	{
+		current->next = new ListNode<T>;
+		current->next->data = target->next->data;
+		current = current->next;
+		target = target->next;
+	}
+}
 
 template<typename T>
 list_iterator<T>::list_iterator(ListNode<T> * start)

@@ -12,15 +12,12 @@ using std::endl;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Stack<double> lol;
-	for (size_t i = 0; i < 170010; i++)
+	List<double> lol;
+	lol.add(1);
+	List<double> ha(lol);
+	for (auto i = ha.iterator(); !i.end(); ++i)
 	{
-		lol.push(i);
-	}
-
-	for (size_t i = 0; i < 9999; i++)
-	{
-		cout << lol.pop();
+		cout << *i << endl;
 	}
 
 	return 0;

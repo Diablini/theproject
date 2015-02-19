@@ -6,6 +6,7 @@
 
 class Base_Exception
 {
+public:
 	Base_Exception();
 	Base_Exception(void * source);
 	Base_Exception(std::string message);

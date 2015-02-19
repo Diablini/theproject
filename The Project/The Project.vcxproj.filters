@@ -78,6 +78,12 @@
     <ClInclude Include="List.h">
       <Filter>Technical</Filter>
     </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary Tree.h">
+      <Filter>Technical</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
