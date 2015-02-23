@@ -85,9 +85,10 @@
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterBody.h" />
     <ClInclude Include="CharacterHistory.h" />
+    <ClInclude Include="Classes.h" />
     <ClInclude Include="exception.h" />
     <ClInclude Include="List.h" />
-    <ClInclude Include="StatTable.h" />
+    <ClInclude Include="Soul.h" />
     <ClInclude Include="Liquids.h" />
     <ClInclude Include="RawReader.h" />
     <ClInclude Include="Stack.h" />

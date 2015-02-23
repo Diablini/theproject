@@ -113,7 +113,8 @@ private:
 
 	void resizeUp()
 	{
-		if (capacity * 2 > VECTOR_MAX_SIZE) throw Base_Exception("Resizing vector oversteps maxsize",this);
+		if (capacity * 2 > VECTOR_MAX_SIZE)
+			throw Base_Exception("Resizing vector oversteps maxsize",this);
 		T * olddata = data;
 		capacity *=2;
 	}

@@ -66,9 +66,6 @@
     <ClInclude Include="Stack.h">
       <Filter>Technical</Filter>
     </ClInclude>
-    <ClInclude Include="StatTable.h">
-      <Filter>Character</Filter>
-    </ClInclude>
     <ClInclude Include="exception.h">
       <Filter>Technical</Filter>
     </ClInclude>
@@ -83,6 +80,12 @@
     </ClInclude>
     <ClInclude Include="Binary Tree.h">
       <Filter>Technical</Filter>
+    </ClInclude>
+    <ClInclude Include="Soul.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes.h">
+      <Filter>Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
